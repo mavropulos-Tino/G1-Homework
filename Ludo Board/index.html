@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      overflow: hidden;
+
+      height: 100vh;
+      width: 100vw;
+    }
+
+    /* Table STyles */
+    table {
+      border: 2px solid #000;
+      margin: 0;
+    }
+    th {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #000; 
+    }
+    .circle {
+      background: cyan;
+      border: 1px solid darkcyan;
+      height: 90%;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: .9rem;
+
+      transition: 250ms;
+      cursor: pointer;
+    }
+    .circle:hover {
+      transform: scale(1.040);
+    }
+
+    /* Color Classes */
+    .red {
+      background: red;
+    }
+    .green {
+      background: green;
+    }
+    .blue {
+      background: blue;
+    }
+    .yellow {
+      background: yellow;
+    }
+  </style>
+
+  <title>Ludo Game Board</title>
+
+</head>
+<body>
+
+  <div class="Board-Container">
+  <table>
+
+    <!-- 1st Row -->
+    <tr>
+      <th class="red"></th>
+      <th class="red"></th>
+      <th rowspan="2" colspan="2"></th>
+      <th><div class="circle"></div></th>
+
+      <th><div class="circle"></div></th>
+      <th><div class="circle">Start</div></th>
+      <th rowspan="2" colspan="2"></th>
+
+      <th class="blue"></th>
+      <th class="blue"></th>
+    </tr>
+
+    <!-- 2nd Row -->
+    <tr>
+      <th class="red"></th>
+      <th class="red"></th>
+      <th><div class="circle"></div></th>
+      <th class="blue"></th>
+
+      <th><div class="circle"></div></th>
+      <th class="blue"></th>
+      <th class="blue"></th>  
+    </tr>
+
+    <!-- 3rd Row -->
+    <tr>
+      <th colspan="4" rowspan="2"></th>
+      <th><div class="circle"></div></th>
+      <th class="blue"></th>
+      <th><div class="circle"></div></th>
+
+      <th colspan="4" rowspan="2"></th>
+    </tr>
+
+    <!-- 4th Row -->
+    <tr>
+      <th><div class="circle"></div></th>
+      <th class="blue"></th>
+      <th><div class="circle"></div></th>
+    </tr>
+
+    <!-- 5th Row -->
+    <tr>
+      <th><div class="circle">Start</div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+
+      <th><div class="circle"></div></th>
+      <th class="blue"></th>
+      <th><div class="circle"></div></th>
+
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+    </tr>
+
+    <!-- 6th Row -->
+    <tr>
+      <th><div class="circle"></div></th>
+      <th class="red"></th>
+      <th class="red"></th>
+      <th class="red"></th>
+
+      <th class="red"></th>
+      <th></th>
+      <th class="green"></th>
+
+      <th class="green"></th>
+      <th class="green"></th>
+      <th class="green"></th>
+      <th><div class="circle"></div></th>
+    </tr>
+
+    <!-- 7th Row -->
+    <tr>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+
+      <th><div class="circle"></div></th>
+      <th class="yellow"></th>
+      <th><div class="circle"></div></th>
+
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th><div class="circle">Start</div></th>
+    </tr>
+
+    <!-- 8th Row -->
+    <tr>
+      <th colspan="4" rowspan="2"></th>
+      <th><div class="circle"></div></th>
+      <th class="yellow"></th>
+      <th><div class="circle"></div></th>
+
+      <th colspan="4" rowspan="2"></th>
+    </tr>
+
+    <!-- 9th Row -->
+    <tr>
+      <th><div class="circle"></div></th>
+      <th class="yellow"></th>
+      <th><div class="circle"></div></th>
+    </tr>
+
+    <!-- 10th Row -->
+    <tr>
+      <th class="yellow"></th>
+      <th class="yellow"></th>
+      <th colspan="2" rowspan="2"></th>
+      <th><div class="circle"></div></th>
+
+      <th class="yellow"></th>
+      <th><div class="circle"></div></th>
+      <th colspan="2" rowspan="2"></th>
+
+      <th class="green"></th>
+      <th class="green"></th>
+    </tr>
+
+    <!-- 11 Row -->
+    <tr>
+      <th class="yellow"></th>
+      <th class="yellow"></th>
+      <th><div class="circle">Start</div></th>
+
+      <th><div class="circle"></div></th>
+      <th><div class="circle"></div></th>
+      <th class="green"></th>
+      <th class="green"></th>
+    </tr>
+    
+  </table>
+  </div>
+
+</body>
+</html>

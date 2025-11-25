@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Boilerplate Styles */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+
+      background: rgb(24, 24, 24);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Table Styles */
+    table {
+      border-spacing: .2rem;
+    }
+    td {
+      width: 80px;
+      height: 80px;
+      color: #ededed;
+
+      font-size: .7rem;
+      font-weight: 500;
+      text-align: center;
+
+      border-radius: .3rem;
+
+      cursor: pointer;
+      transition: 250ms;
+    }
+    td:hover {
+      transform: scale(1.030);
+    }
+    td a {
+      text-decoration: none;
+      color: #ededed;
+    }
+
+    caption {
+      color: #ededed;
+      font-size: 2rem;
+    }
+
+    td h1 {
+      font-size: 1rem;
+    }
+    td h3 {
+      font-size: 1rem;
+    }
+    td h5 {
+      font-size: .60rem;
+    }
+
+    /* Utility Classes */
+    .Ignore {
+      cursor: default;
+    }
+    .Ignore:hover {
+      transform: scale(1);
+    }
+    .Periods {
+      font-size: .8rem;
+      padding-right: .4rem;
+      text-align: end;
+    }
+    .Group {
+      font-size: .8rem;
+      padding-bottom: .4rem;
+      vertical-align: bottom;
+    }
+
+    /* Periodic Table Eelement Color Utitlity Classes */
+    .Alkali-Metals {
+      background: #856c73;
+    }
+    .Alkaline-Earth-Metals {
+      background: #c2af92;
+    }
+    .Nonmetals {
+      background: #4e9c66;
+    }
+    .Transition-Metals {
+      background: #2f7555;
+    }
+    .Post-Transition-Metals {
+      background: #6e6d6d;
+    }
+    .Metalloids {
+      background: #3b6648;
+    }
+    .Halogens {
+      background: #968e27;
+    }
+    .Noble-Gasses {
+      background: #3d8b85;
+    }
+    .Lanthanoids {
+      background: #503d68;
+    }
+    .Actinoids {
+      background: #796591;
+    }
+    .NaN {
+      background: #353535;
+    }
+  </style>
+
+  <title>Periodic Table</title>
+</head>
+<body>
+  <table>
+    <caption>Periodic Table</caption>
+
+    <!-- Utilities Row -->
+    <tr>
+      <td style="height: 30px;" class="Ignore"></td>
+
+      <!-- Group Lables -->
+      <td style="height: 30px;" class="Group Ignore">1</td>
+      <td style="height: 30px;" colspan="16" class="Ignore Ignore"></td>
+      <td style="height: 30px;" class="Group Ignore">18</td>
+    </tr>
+
+    <!-- 1st Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">1</td>
+
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Hydrogen" target="_blank"><h3><small>1</small></h3><h1><b>H</b></h1><h5>Hydrogen</h5></a></td>
+
+      <!-- Group Label -->
+      <td class="Group Ignore">2</td>
+
+      <!-- Legend -->
+      <td colspan="3" class="Ignore"></td>
+      <td class="Alkali-Metals Ignore">Alkali Metals</td>
+      <td class="Alkaline-Earth-Metals Ignore">Alkaline Earth Metals</td>
+      <td class="Nonmetals Ignore">Nonmetals</td>
+      <td class="Post-Transition-Metals Ignore">Post Transition Metals</td>
+      <td class="Metalloids Ignore">Metalloids</td>
+      <td colspan="2" class="Ignore Ignore"></td>
+
+      <!-- Group Label -->
+      <td class="Group Ignore">13</td>
+      <td class="Group Ignore">14</td>
+      <td class="Group Ignore">15</td>
+      <td class="Group Ignore">16</td>
+      <td class="Group Ignore">17</td>
+      <td class="Noble-Gasses"><a href="https://en.wikipedia.org/wiki/Helium" target="_blank"><h3><small>2</small></h3><h1><b>He</b></h1><h5>Helium</h5></a></td>
+    </tr>
+
+    <!-- 2nd Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">2</td>
+
+      <td class="Alkali-Metals"><a href="https://en.wikipedia.org/wiki/Lithium" target="_blank"><h3><small>3</small></h3><h1><b>Li</b></h1><h5>Lithium</h5></a></td>
+      <td class="Alkaline-Earth-Metals"><a href="https://en.wikipedia.org/wiki/Beryllium" target="_blank"><h3><small>4</small></h3><h1><b>Be</b></h1><h5>Beryllium</h5></a></td>
+
+      <!-- Legend -->
+      <td colspan="3" class="Ignore"></td>
+      <td class="Transition-Metals Ignore">Transition Metals</td>
+      <td class="Halogens Ignore">Halogens</td>
+      <td class="Noble-Gasses Ignore">Noble Gasses</td>
+      <td class="Lanthanoids Ignore">Lanthanoids</td>
+      <td class="Actinoids Ignore">Actinoids</td>
+      <td class="NaN Ignore">Unknown</td>
+      <td class="Ignore"></td>
+
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Boron" target="_blank"><h3><small>5</small></h3><h1><b>B</b></h1><h5>Boron</h5></a></td>
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Carbon" target="_blank"><h3><small>6</small></h3><h1><b>C</b></h1><h5>Carbon</h5></a></td>
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank"><h3><small>7</small></h3><h1><b>N</b></h1><h5>Nitrogen</h5></a></td>
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Oxygen" target="_blank"><h3><small>8</small></h3><h1><b>O</b></h1><h5>Oxygen</h5></a></td>
+      <td class="Halogens"><a href="https://en.wikipedia.org/wiki/Fluorine" target="_blank"><h3><small>9</small></h3><h1><b>F</b></h1><h5>Fluorine</h5></a></td>
+      <td class="Noble-Gasses"><a href="https://en.wikipedia.org/wiki/Neon" target="_blank"><h3><small>10</small></h3><h1><b>Ne</b></h1><h5>Neon</h5></a></td>
+    </tr>
+
+    <!-- 3rd Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">3</td>
+
+      <td class="Alkali-Metals"><a href="https://en.wikipedia.org/wiki/Sodium" target="_blank"><h3><small>11</small></h3><h1><b>Na</b></h1><h5>Sodium</h5></a></td>
+      <td class="Alkaline-Earth-Metals"><a href="https://en.wikipedia.org/wiki/Magnesium" target="_blank"><h3><small>12</small></h3><h1><b>Mg</b></h1><h5>Magnesium</h5></a></td>
+
+      <!-- Group Label -->
+      <td class="Group Ignore">3</td>
+      <td class="Group Ignore">4</td>
+      <td class="Group Ignore">5</td>
+      <td class="Group Ignore">6</td>
+      <td class="Group Ignore">7</td>
+      <td class="Group Ignore">8</td>
+      <td class="Group Ignore">9</td>
+      <td class="Group Ignore">10</td>
+      <td class="Group Ignore">11</td>
+      <td class="Group Ignore">12</td>
+
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Aluminium" target="_blank"><h3><small>13</small></h3><h1><b>Al</b></h1><h5>Aluminium</h5></a></td>
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Silicon" target="_blank"><h3><small>14</small></h3><h1><b>Si</b></h1><h5>Silicon</h5></a></td>
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Phosphorus" target="_blank"><h3><small>15</small></h3><h1><b>P</b></h1><h5>Phosphorus</h5></a></td>
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Sulfur" target="_blank"><h3><small>16</small></h3><h1><b>S</b></h1><h5>Sulfur</h5></a></td>
+      <td class="Halogens"><a href="https://en.wikipedia.org/wiki/Chlorine" target="_blank"><h3><small>17</small></h3><h1><b>Cl</b></h1><h5>Chlorine</h5></a></td>
+      <td class="Noble-Gasses"><a href="https://en.wikipedia.org/wiki/Argon" target="_blank"><h3><small>18</small></h3><h1><b>Ar</b></h1><h5>Argon</h5></a></td>
+    </tr>
+
+    <!-- 4th Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">4</td>
+
+      <td class="Alkali-Metals"><a href="https://en.wikipedia.org/wiki/Potassium" target="_blank"><h3><small>19</small></h3><h1><b>K</b></h1><h5>Potassium</h5></a></td>
+      <td class="Alkaline-Earth-Metals"><a href="https://en.wikipedia.org/wiki/Calcium" target="_blank"><h3><small>20</small></h3><h1><b>Ca</b></h1><h5>Calcium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Scandium" target="_blank"><h3><small>21</small></h3><h1><b>Sc</b></h1><h5>Scandium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Titanium" target="_blank"><h3><small>22</small></h3><h1><b>Ti</b></h1><h5>Titanium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Vanadium" target="_blank"><h3><small>23</small></h3><h1><b>V</b></h1><h5>Vanadium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Chromium" target="_blank"><h3><small>24</small></h3><h1><b>Cr</b></h1><h5>Chromium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Manganese" target="_blank"><h3><small>25</small></h3><h1><b>Mn</b></h1><h5>Manganese</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Iron" target="_blank"><h3><small>26</small></h3><h1><b>Fe</b></h1><h5>Iron</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Cobalt" target="_blank"><h3><small>27</small></h3><h1><b>Co</b></h1><h5>Cobalt</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Nickel" target="_blank"><h3><small>28</small></h3><h1><b>Ni</b></h1><h5>Nickel</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Copper" target="_blank"><h3><small>29</small></h3><h1><b>Cu</b></h1><h5>Copper</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Zinc" target="_blank"><h3><small>30</small></h3><h1><b>Zn</b></h1><h5>Zinc</h5></a></td>
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Gallium" target="_blank"><h3><small>31</small></h3><h1><b>Ga</b></h1><h5>Gallium</h5></a></td>
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Germanium" target="_blank"><h3><small>32</small></h3><h1><b>Ge</b></h1><h5>Germanium</h5></a></td>
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Arsenic" target="_blank"><h3><small>33</small></h3><h1><b>As</b></h1><h5>Arsenic</h5></a></td>
+      <td class="Nonmetals"><a href="https://en.wikipedia.org/wiki/Selenium" target="_blank"><h3><small>34</small></h3><h1><b>Se</b></h1><h5>Selenium</h5></a></td>
+      <td class="Halogens"><a href="https://en.wikipedia.org/wiki/Bromine" target="_blank"><h3><small>35</small></h3><h1><b>Br</b></h1><h5>Bromine</h5></a></td>
+      <td class="Noble-Gasses"><a href="https://en.wikipedia.org/wiki/Krypton" target="_blank"><h3><small>36</small></h3><h1><b>Kr</b></h1><h5>Krypton</h5></a></td>
+    </tr>
+
+    <!-- 5th Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">5</td>
+
+      <td class="Alkali-Metals"><a href="https://en.wikipedia.org/wiki/Rubidium" target="_blank"><h3><small>37</small></h3><h1><b>Rb</b></h1><h5>Rubidium</h5></a></td>
+      <td class="Alkaline-Earth-Metals"><a href="https://en.wikipedia.org/wiki/Strontium" target="_blank"><h3><small>38</small></h3><h1><b>Sr</b></h1><h5>Strontium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Yttrium" target="_blank"><h3><small>39</small></h3><h1><b>Y</b></h1><h5>Yttrium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Zirconium" target="_blank"><h3><small>40</small></h3><h1><b>Zr</b></h1><h5>Zirconium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Niobium" target="_blank"><h3><small>41</small></h3><h1><b>Nb</b></h1><h5>Niobium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Molybdenum" target="_blank"><h3><small>42</small></h3><h1><b>Mo</b></h1><h5>Molybdenum</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Technetium" target="_blank"><h3><small>43</small></h3><h1><b>Tc</b></h1><h5>Technetium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Ruthenium" target="_blank"><h3><small>44</small></h3><h1><b>Ru</b></h1><h5>Ruthenium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Rhodium" target="_blank"><h3><small>45</small></h3><h1><b>Rh</b></h1><h5>Rhodium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Palladium" target="_blank"><h3><small>46</small></h3><h1><b>Pd</b></h1><h5>Palladium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Silver" target="_blank"><h3><small>47</small></h3><h1><b>Ag</b></h1><h5>Silver</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Cadmium" target="_blank"><h3><small>48</small></h3><h1><b>Cd</b></h1><h5>Cadmium</h5></a></td>
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Indium" target="_blank"><h3><small>49</small></h3><h1><b>In</b></h1><h5>Indium</h5></a></td>
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Tin" target="_blank"><h3><small>50</small></h3><h1><b>Sn</b></h1><h5>Tin</h5></a></td>
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Antimony" target="_blank"><h3><small>51</small></h3><h1><b>Sb</b></h1><h5>Antimony</h5></a></td>
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Tellurium" target="_blank"><h3><small>52</small></h3><h1><b>Te</b></h1><h5>Tellurium</h5></a></td>
+      <td class="Halogens"><a href="https://en.wikipedia.org/wiki/Iodine" target="_blank"><h3><small>53</small></h3><h1><b>I</b></h1><h5>Iodine</h5></a></td>
+      <td class="Noble-Gasses"><a href="https://en.wikipedia.org/wiki/Xenon" target="_blank"><h3><small>54</small></h3><h1><b>Xe</b></h1><h5>Xenon</h5></a></td>
+    </tr>
+
+    <!-- 6th Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">6</td>
+
+      <td class="Alkali-Metals"><a href="https://en.wikipedia.org/wiki/Cesium" target="_blank"><h3><small>55</small></h3><h1><b>Cs</b></h1><h5>Caesium</h5></a></td>
+      <td class="Alkaline-Earth-Metals"><a href="https://en.wikipedia.org/wiki/Barium" target="_blank"><h3><small>56</small></h3><h1><b>Ba</b></h1><h5>Barium</h5></a></td>
+
+      <!-- Lanthanoids Placehold Symbol -->
+      <td class="Lanthanoids Ignore"><h1>*</h1></td>
+
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Hafnium" target="_blank"><h3><small>72</small></h3><h1><b>Hf</b></h1><h5>Hafnium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Tantalum" target="_blank"><h3><small>73</small></h3><h1><b>Ta</b></h1><h5>Tantalum</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/W" target="_blank"><h3><small>74</small></h3><h1><b>W</b></h1><h5>Tungsten</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Rhenium" target="_blank"><h3><small>75</small></h3><h1><b>Re</b></h1><h5>Rhenium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Osmium" target="_blank"><h3><small>76</small></h3><h1><b>Os</b></h1><h5>Osmium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Iridium" target="_blank"><h3><small>77</small></h3><h1><b>Ir</b></h1><h5>Iridium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Platinum" target="_blank"><h3><small>78</small></h3><h1><b>Pt</b></h1><h5>Platinum</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Gold" target="_blank"><h3><small>79</small></h3><h1><b>Au</b></h1><h5>Gold</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Mercury_(element)" target="_blank"><h3><small>80</small></h3><h1><b>Hg</b></h1><h5>Mercury</h5></a></td>
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Thallium" target="_blank"><h3><small>81</small></h3><h1><b>Tl</b></h1><h5>Thallium</h5></a></td>
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Lead" target="_blank"><h3><small>82</small></h3><h1><b>Pb</b></h1><h5>Lead</h5></a></td>
+      <td class="Post-Transition-Metals"><a href="https://en.wikipedia.org/wiki/Bismuth" target="_blank"><h3><small>83</small></h3><h1><b>Bi</b></h1><h5>Bismuth</h5></a></td>
+      <td class="Metalloids"><a href="https://en.wikipedia.org/wiki/Polonium" target="_blank"><h3><small>84</small></h3><h1><b>Po</b></h1><h5>Polonium</h5></a></td>
+      <td class="Halogens"><a href="https://en.wikipedia.org/wiki/Astatine" target="_blank"><h3><small>85</small></h3><h1><b>At</b></h1><h5>Astatine</h5></a></td>
+      <td class="Noble-Gasses"><a href="https://en.wikipedia.org/wiki/Radon" target="_blank"><h3><small>86</small></h3><h1><b>Rn</b></h1><h5>Radon</h5></a></td>
+    </tr>
+
+    <!-- 7th Period -->
+    <tr>
+      <!-- Period Label -->
+      <td class="Periods Ignore">7</td>
+
+      <td class="Alkali-Metals"><a href="https://en.wikipedia.org/wiki/Francium" target="_blank"><h3><small>87</small></h3><h1><b>Fr</b></h1><h5>Francium</h5></a></td>
+      <td class="Alkaline-Earth-Metals"><a href="https://en.wikipedia.org/wiki/Radium" target="_blank"><h3><small>88</small></h3><h1><b>Ra</b></h1><h5>Radium</h5></a></td>
+      
+      <!-- Actinoids Placehold Symbol -->
+      <td class="Actinoids Ignore"><h1>**</h1></td>
+
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Rutherfordium" target="_blank"><h3><small>104</small></h3><h1><b>Rf</b></h1><h5>Rutherfordium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Dubnium" target="_blank"><h3><small>105</small></h3><h1><b>Db</b></h1><h5>Dubnium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Seaborgium" target="_blank"><h3><small>106</small></h3><h1><b>Sg</b></h1><h5>Seaborgium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Bohrium" target="_blank"><h3><small>107</small></h3><h1><b>Bh</b></h1><h5>Bohrium</h5></a></td>
+      <td class="Transition-Metals"><a href="https://en.wikipedia.org/wiki/Hassium" target="_blank"><h3><small>108</small></h3><h1><b>Hs</b></h1><h5>Hassium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Meitnerium" target="_blank"><h3><small>109</small></h3><h1><b>Mt</b></h1><h5>Meitnerium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Darmstadtium" target="_blank"><h3><small>110</small></h3><h1><b>Ds</b></h1><h5>Darmstadtium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Roentgenium" target="_blank"><h3><small>111</small></h3><h1><b>Rg</b></h1><h5>Roentgenium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Copernicium" target="_blank"><h3><small>112</small></h3><h1><b>Cn</b></h1><h5>Copernicium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Nihonium" target="_blank"><h3><small>113</small></h3><h1><b>Nh</b></h1><h5>Nihonium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Flerovium" target="_blank"><h3><small>114</small></h3><h1><b>Fl</b></h1><h5>Flerovium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Moscovium" target="_blank"><h3><small>115</small></h3><h1><b>Mc</b></h1><h5>Moscovium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Livermorium" target="_blank"><h3><small>116</small></h3><h1><b>Lv</b></h1><h5>Livermorium</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Tennessine" target="_blank"><h3><small>117</small></h3><h1><b>Ts</b></h1><h5>Tennessine</h5></a></td>
+      <td class="NaN"><a href="https://en.wikipedia.org/wiki/Oganesson" target="_blank"><h3><small>118</small></h3><h1><b>Og</b></h1><h5>Oganesson</h5></a></td>
+    </tr>
+
+    <!-- Devider Line -->
+    <tr style="height: 30px;"></tr>
+
+    <!-- Extra Lanthanoids Showcase Row -->
+    <tr>
+      <td colspan="3" class="Ignore"></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Lanthanum" target="_blank"><h3><small>57</small></h3><h1><b>La</b></h1><h5>Lanthanum</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Cerium" target="_blank"><h3><small>58</small></h3><h1><b>Ce</b></h1><h5>Cerium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Praseodymium" target="_blank"><h3><small>59</small></h3><h1><b>Pr</b></h1><h5>Praseodymium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Neodymium" target="_blank"><h3><small>60</small></h3><h1><b>Nd</b></h1><h5>Neodymium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Promethium" target="_blank"><h3><small>61</small></h3><h1><b>Pm</b></h1><h5>Promethium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Samarium" target="_blank"><h3><small>62</small></h3><h1><b>Sm</b></h1><h5>Samarium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Europium" target="_blank"><h3><small>63</small></h3><h1><b>Eu</b></h1><h5>Europium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Gadolinium" target="_blank"><h3><small>64</small></h3><h1><b>Gd</b></h1><h5>Gadolinium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Terbium" target="_blank"><h3><small>65</small></h3><h1><b>Tb</b></h1><h5>Terbium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Dysprosium" target="_blank"><h3><small>66</small></h3><h1><b>Dy</b></h1><h5>Dysprosium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Holmium" target="_blank"><h3><small>67</small></h3><h1><b>Ho</b></h1><h5>Holmium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Erbium" target="_blank"><h3><small>68</small></h3><h1><b>Er</b></h1><h5>Erbium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Thulium" target="_blank"><h3><small>69</small></h3><h1><b>Tm</b></h1><h5>Thulium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Ytterbium" target="_blank"><h3><small>70</small></h3><h1><b>Yb</b></h1><h5>Ytterbium</h5></a></td>
+      <td class="Lanthanoids"><a href="https://en.wikipedia.org/wiki/Lutetium" target="_blank"><h3><small>71</small></h3><h1><b>Lu</b></h1><h5>Lutetium</h5></a></td>
+    </tr>
+
+    <!-- Extra Actinoids Showcase Row -->
+    <tr>
+      <td colspan="3" class="Ignore"></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Actinium" target="_blank"><h3><small>89</small></h3><h1><b>Ac</b></h1><h5>Actinium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Thorium" target="_blank"><h3><small>90</small></h3><h1><b>Th</b></h1><h5>Thorium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Protactinium" target="_blank"><h3><small>91</small></h3><h1><b>Pa</b></h1><h5>Protactinium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Uranium" target="_blank"><h3><small>92</small></h3><h1><b>U</b></h1><h5>Uranium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Neptunium" target="_blank"><h3><small>93</small></h3><h1><b>Np</b></h1><h5>Neptunium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Plutonium" target="_blank"><h3><small>94</small></h3><h1><b>Pu</b></h1><h5>Plutonium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Americium" target="_blank"><h3><small>95</small></h3><h1><b>Am</b></h1><h5>Americium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Curium" target="_blank"><h3><small>96</small></h3><h1><b>Cm</b></h1><h5>Curium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Berkelium" target="_blank"><h3><small>97</small></h3><h1><b>Bk</b></h1><h5>Berkelium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Californium" target="_blank"><h3><small>98</small></h3><h1><b>Cf</b></h1><h5>Californium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Einsteinium" target="_blank"><h3><small>99</small></h3><h1><b>Es</b></h1><h5>Einsteinium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Fermium" target="_blank"><h3><small>100</small></h3><h1><b>Fm</b></h1><h5>Fermium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Mendelevium" target="_blank"><h3><small>101</small></h3><h1><b>Md</b></h1><h5>Mendelevium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Nobelium" target="_blank"><h3><small>102</small></h3><h1><b>No</b></h1><h5>Nobelium</h5></a></td>
+      <td class="Actinoids"><a href="https://en.wikipedia.org/wiki/Lawrencium" target="_blank"><h3><small>103</small></h3><h1><b>Lr</b></h1><h5>Lawrencium</h5></a></td>
+    </tr>
+
+  </table>
+</body>
+</html>
