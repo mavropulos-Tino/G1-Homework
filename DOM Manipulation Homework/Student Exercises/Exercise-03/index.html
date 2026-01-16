@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exercise #3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Registry</h1>
+
+    <div class="wrapper">
+        <form id="studentForm">
+            <label>
+                First Name
+                <input type="text" id="firstName" required>
+            </label>
+
+            <label>
+                Last Name
+                <input type="text" id="lastName" required>
+            </label>
+
+            <label>
+                Age
+                <input type="number" id="age" required>
+            </label>
+
+            <button type="button" onclick="registerStudent()">Save</button>
+        </form>
+
+        <div class="list_wrapper">
+            <h3>Students:</h3>
+            <ul id="studentList"></ul>
+        </div>
+        
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
