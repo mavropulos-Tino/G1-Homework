@@ -1,0 +1,86 @@
+.Card {
+    background-color: var(--color-background);
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+}
+
+.Card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent-light);
+}
+
+.cardFlag {
+    width: 100%;
+    height: 180px;
+    border-radius: 1rem;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.cardInfo {
+    padding-top: 1.5rem;
+}
+
+.cardName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.cardDetail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.cardDetail:last-child {
+    margin-bottom: 0;
+}
+
+.cardLabel {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    min-width: 90px;
+    flex-shrink: 0;
+}
+
+.cardValue {
+    color: var(--color-text-tertiary);
+    flex: 1;
+}
+
+.learnMoreButton {
+    display: block;
+    width: 100%;
+    margin-top: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.learnMoreButton:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    color: white;
+}
+
+.tableFlag {
+    width: 50px;
+    border-radius: .3rem;
+    border: .1rem solid black;
+}

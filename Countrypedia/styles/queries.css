@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .header-section,
+    .search-section,
+    .main-content {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .view-toggle {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-buttons {
+        flex-direction: column;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
